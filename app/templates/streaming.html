@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block title %}Streaming Page{% endblock %}
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Streaming</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>Live Streaming</h1>
+    <p>This is where the live video would be displayed:</p>
+    <div id="video-placeholder"></div>
+
+    <div>
+        <video id="stream" autoplay loop>
+            <source src="https://youtube.com/shorts/9s4sLw7v7yQ?feature=share" type="video/mp4">
+        </video>
+    </div>
+</body>
+{% endblock %}
